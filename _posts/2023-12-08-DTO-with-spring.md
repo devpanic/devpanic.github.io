@@ -2,44 +2,35 @@
 title: DTO with Spring
 date: 2023-12-08 11:33:00 +0800
 # date: 2023-12-08
-categories: [Spring, Java]
-tags: [Java]
+categories: [Spring]
+tags: [Java, Spring]
 ---
 
-### DTO(Data Transfer Object)란?
+### **DTO(Data Transfer Object)란?**
 
-온전히 계층간의 데이터 전송만을 위한 객체를 의미
-
-비즈니스 로직을 제외한 아래의 요소들만 포함한다.
-
+온전히 계층간의 데이터 전송만을 위한 객체를 의미<br>
+비즈니스 로직을 제외한 아래의 요소들만 포함한다.<br>
 Setter를 포함하지 않을 경우, 불변 객체로 생성할 수 있다.
 
 - 데이터
 - Getter / Setter
 
-### 왜 DTO를 사용해야할까?
+### **왜 DTO를 사용해야할까?**
 
-1. Entity 객체 내 데이터의 부분적 사용
-
-   API마다 전달해야 할 데이터는 상이하다.
-
-   클라이언트에게 노출되는 데이터 중 민감 정보를 보호해야 한다.
-
+1. Entity 객체 내 데이터의 부분적 사용<br>
+   API마다 전달해야 할 데이터는 상이하다.<br>
+   클라이언트에게 노출되는 데이터 중 민감 정보를 보호해야 한다.<br>
    DTO를 사용함으로써 여러 비즈니스 로직에 유연하게 대처 가능하게 되고, 원하는 데이터만 노출시킬 수 있게 된다.
 
-2. Entity 객체 캡슐화
-
-   데이터 전송 과정에 Entity 객체를 사용하게 되면 데이터가 변질될 수 있다.
-
+2. Entity 객체 캡슐화<br>
+   데이터 전송 과정에 Entity 객체를 사용하게 되면 데이터가 변질될 수 있다.<br>
    DTO를 사용하지 않으면 요구사항 변경 시에 잦은 Entity 객체 구성의 수정이 필요하며, Entity와 연결된 DB 구성도 수정되어야할 수 있다.
 
-3. Controller ↔ Service 의존도
-
-   Service가 Controller의 파라미터 입력에 의존해 동작하게 되면 의존도가 높아진다.
-
+3. Controller ↔ Service 의존도<br>
+   Service가 Controller의 파라미터 입력에 의존해 동작하게 되면 의존도가 높아진다.<br>
    DTO를 사용함으로써 두 계층간의 의존도를 낮춰줄 수 있다.
 
-### Spring에서 DTO 사용하기
+### **Spring에서 DTO 사용하기**
 
 **DTO 클래스 생성**
 

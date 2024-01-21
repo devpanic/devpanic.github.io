@@ -1,7 +1,6 @@
 ---
-# the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 3
 ---
 
 컴퓨터에 관한 지식을 다양하게 접하는 것을 좋아하고 공유하는 것을 좋아합니다.<br>

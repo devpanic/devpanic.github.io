@@ -1,9 +1,10 @@
 ---
 title: MissingServletRequestParameterException 예외 발생 분석
-date: 2024-05-25 23:33:00 +0800
+date: 2024-05-25 11:33:00 +0800
 categories: [Spring]
 tags: [Java, Spring, Postman]
 ---
+
 MySQL을 사용해서 Spring 프로젝트를 구성하고 싶어서 공식 [문서](https://spring.io/guides/gs/accessing-data-mysql#initial)를 통해서 실습 프로젝트를 생성했다.<br>
 MySQL Database 환경 구성을 한 뒤에 Postman을 이용해서 테스트를 진행했다.<br>
 

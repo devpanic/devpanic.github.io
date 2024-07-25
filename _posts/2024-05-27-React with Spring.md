@@ -1,5 +1,5 @@
 ---
-title: 1) React와 Spring로 프로젝트 구성하기
+title: React와 Spring로 프로젝트 구성하기
 date: 2024-05-27 12:00:00 +0800
 categories: [Spring]
 tags: [Java, Spring, React]
